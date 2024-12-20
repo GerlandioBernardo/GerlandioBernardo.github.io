@@ -1,0 +1,26 @@
+header{
+    background-color: rgb(58, 57, 57);
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    color:  white;
+}
+li a:hover{
+    color: rgb(180, 180, 180);
+}
+.iconsHeader{
+    position: relative;
+    top: 2px;
+    right: 4px;
+}

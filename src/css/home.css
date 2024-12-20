@@ -1,0 +1,193 @@
+.home{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   gap: 200px;
+   margin-top: 110px;
+}
+.descricao h1{
+    color: rgb(100, 149, 212);
+    font-size: 32px;
+}
+.descricao h2{
+    color: white;
+    font-size: 20px;
+    padding-top: 8px;
+}
+.descricao p{
+    color: white;
+    font-size: 15px;
+    padding-top: 20px;
+}
+.imagem p{
+    color: white;
+}
+.descricao span  > a{
+    text-decoration: none;
+    background-color: rgb(59, 57, 57);
+    padding: 10px 40px;
+    color: aqua;
+    border-radius: 5px;
+}
+#curriculo{
+    margin-left: 40px;
+}
+.descricao span  a:hover{
+    cursor: pointer;
+    background-color: rgb(150, 147, 147);
+}
+.imagem img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 2px rgb(148, 147, 147);
+}
+.icons{
+    position: relative;
+    top: 3px;
+    right: 13px;
+}
+.projetos{
+    color: white;
+    margin-top: 110px;
+}
+#projetos1, #projetos2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 40px;
+}
+.projetos h2{
+    text-align: center;
+    font-size: 25px;
+    color: white
+
+}
+.projetos p{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    color: blue;
+}
+.projetosDesenvolvidos img{
+    width: 360px;
+    height: 220px;
+    outline: 2px solid  white;
+    border-radius: 5px;
+}
+.projetosDesenvolvidos img:hover{
+    width: 365px;
+    height: 225px;
+}
+#buttonVejaMais{
+    margin: 15px 0px 0px 285px;
+}
+#buttonVejaMais a{
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#buttonVejaMais a:hover{
+    cursor: pointer;
+    background-color: rgb(27, 27, 88);
+}
+.tecnologias{
+    margin-top: 90px;
+}
+.tecnologias h2{
+    color: white;
+    text-align: center;
+}
+.tecnologias p{
+    text-align: center;
+    font-size: 18px;
+    padding-top:10px;
+    color: 
+    blue;
+}
+#center{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.iconsTecn{
+    color: white;
+    background-color: rgb(89, 233, 89);
+    position: relative;
+    top: 3px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 0px 4px;
+}
+.tecnologiasUtilizadas{
+    background-color: rgb(87, 86, 86);
+    width: 270px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px red;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.tecnologiasUtilizadas span{
+    padding-left: 20px;
+    color: white;
+}
+.contato{
+    margin-top: 50px;
+}
+.contato h2{
+    text-align: center;
+    color: white;
+}
+.contato p{
+    text-align: center;
+    color: blue;
+    font-size: 18px;
+    padding-top: 10px;
+}
+footer{
+    background-color: rgb(53, 52, 52);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.iconsFooter a{
+    color: white;
+}
+footer .iconsFooter{
+    padding-top: 4px;
+
+}
+.iconsFooter a:hover{
+    color: black;
+    cursor: pointer;
+}
+#meiosDeContato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: brown;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+#contatos{
+    background-color: rgb(109, 108, 108, 0.1);
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 2px 2px white;
+}
+#contatos .contatoMeios{
+    padding-left: 10px;
+    font-size: 15px;
+    padding-top: 30px;
+}
+.iconsContato{
+    position: relative;
+    top: 5px
+}
