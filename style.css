@@ -1,3 +1,6 @@
+:root {
+    --cor-roxo: rgb(152, 97, 207);
+}
 body{
     margin: 0;
     padding: 0;
@@ -28,7 +31,7 @@ ul li a:hover{
 header div span {
     padding-left: 40px;
     font-size: 25px;
-    color: rgb(152, 97, 207);
+    color: var(--cor-roxo)
 }
 #home{
     display: flex;
@@ -43,7 +46,7 @@ header div span {
     border-radius: 50%;
     vertical-align: 50px;
 }
-.descriptionAndName #name {
+.name {
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -58,11 +61,12 @@ header div span {
     margin: 0;
     
 }
-#description {
+.description {
     max-width: 550px;
     text-align: justify;
     line-height: 1.5;
     color: white;
+    font-size: 15px;
 }
 .button{
     text-align: left;
@@ -92,3 +96,129 @@ aside div a img {
     width: 20px;
     padding-top: 5px;
 }
+#sobreMin{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+
+}
+#imageSectionSobreMin img {
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+#nameSection {
+    font-size: 30px;
+    color: var(--cor-roxo);
+    margin: 0;
+}
+#location {
+    max-width: 550px;
+    border: #0f71e9 solid 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.label{
+    color: rgb(45, 175, 175);
+    font-size: 15px;
+}
+.value{
+    color: white;
+    font-size: 13px;
+}
+#linkCurriculum{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+#linkCurriculum a {
+    background: linear-gradient(to right, #79dcf0, #040d5e);
+    display: block;
+    width: 130px;
+    padding: 13px;
+    color: #e9eef5;
+    border-radius: 3px;
+    text-align: center;
+}
+#linkCurriculum a:hover{
+    background: linear-gradient(to right, #266dd6, #777676);
+    color: white;
+}
+#projetos{
+    margin-top: 100px;
+}
+.projeto-contanier {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+h2{
+    font-size: 30px;
+    color: var(--cor-roxo);
+    text-align: center;
+}
+.projeto{
+    background-color: #202020;
+    width: 310px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 1px #0f71e9 ;
+    padding-bottom: 10px;
+}
+.imageProjeto img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#tecnologias span img {
+    width: 30px;
+}
+
+strong{
+    color: slateblue;
+}
+h3 a{
+    color: #848cda;
+}
+h3 a:hover{
+    color: #0f71e9;
+}
+#tecnologias h2{
+    margin-top: 70px;
+}
+#technologiesUsed-contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.technologiesUsed{
+    background-color: #2c2c2c;
+    width: 200px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px #99b7db;
+    height: 210px;
+    margin-top: 30px;
+}
+.imageTechnologiesUsed{
+    text-align: center;
+    padding-top: 10px;
+}
+.imageTechnologiesUsed img{
+    width: 50px;
+}
+.technologiesUsed h3{
+    text-align: center;
+    color: white;
+}
+.technologiesUsed p {
+    text-align: center;
+    color: #28a4bd;
+}
+
+
