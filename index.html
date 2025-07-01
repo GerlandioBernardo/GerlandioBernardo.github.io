@@ -14,10 +14,10 @@
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#sobreMin">Sobre min</a></li>
+                <li><a href="#sobreMim">Sobre mim</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#tecnologias">Tecnologias</a></li>
-                 <li><a href="#">Contato</a></li>
+                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +30,7 @@
                     </a>
                 </div>
                  <div class="icon">
-                    <a href="#">
+                    <a href="#contato">
                         <img src="/assets/icons/whatsapp.png" alt="whatsapp">
                     </a>
                  </div>
@@ -41,7 +41,8 @@
                     </a>
                 </div>
                  <div class="icon">
-                    <a href="#">
+                    <a href="https://www.instagram.com/gerlandiobernardo?igsh=MWU1cWw3amxmZ3BsaA=="
+                    target="_blank">
                         <img src="/assets/icons/instagram.png" alt="instagram">
                     </a>
                  </div>
@@ -54,14 +55,13 @@
                     Desenvolvedor Full Stack
                 </p>
                 <p class="description">
-                   Estudante de Análise e Desenvolvimento de Sistemas no IFPB e 
-                   participante do programa de formação Full Stack pelo +PraTi em 
-                   parceria com o Codifica. Tenho conhecimento em Javascript, TypeScript, 
-                   React.js, Express.js, Prisma, Java, PostgreSQL e MongoDB, entre 
-                   outras tecnologias do ecossistema de desenvolvimento de software.
+                   Seja muito bem-vindo ao meu site! Aqui você encontrará um pouco 
+                   sobre mim, meus projetos e as tecnologias que utilizo no dia a dia.
+                   Fique à vontade para explorar, conhecer meu trabalho 
+                   e, se quiser, entrar em contato. É um prazer ter você por aqui!
                 </p>
                 <div class="button">
-                    <button>Contate-me</button>
+                    <a href="#contato">Contate-me</a>
 
                 </div>
 
@@ -72,13 +72,13 @@
                 </div>
             </div>
         </section>
-        <section id="sobreMin">
-            <div id="imageSectionSobreMin">
+        <section id="sobreMim">
+            <div id="imageSectionSobreMim">
                 <img src="/assets/image/pessoal.jpeg" alt="Imagem Pessoal"/>
             </div>
             <div id="information">
                 <p id="nameSection">
-                    Sobre Min
+                    Sobre Mim
                 </p>
                 <p class="description">
                    Sou estudante de Análise e Desenvolvimento de Sistemas no 
@@ -111,7 +111,8 @@
                     </div>
                 </div>
                  <div id="linkCurriculum">
-                    <a href="#">Currículo</a>
+                    <a href="https://docs.google.com/document/d/1HYxtUjW1sMYwSCZ6zhSE9P_ZY0TXpmDBiXSpUfulNZk/edit?usp=sharing"
+                    target="_blank">Currículo</a>
                 </div
             </div>
 
@@ -162,7 +163,7 @@
                     <img src="/assets/image/pokedex.png" alt="pokedex"> 
                 </div>
                 <h3>
-                    <a href="https://github.com/GerlandioBernardo/Mini-Poke-dex" target="_blank">Pokedex</a>
+                    <a href="https://github.com/GerlandioBernardo/Mini-Poke-dex" target="_blank">Pokédex</a>
                 </h3>
                 <div id="tecnologias">
                     <span>
@@ -292,6 +293,59 @@
                 </div>
             </div>
         </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <div id="informationContact-contanier">
+                <div id="informationContact">
+                    <div class="contact-item">
+                        <span>
+                            <img src="/assets/icons/whatsapp.png" alt="Whatsapp">
+                        </span>
+                        <span>
+                            83 9 9916-0477
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span>
+                            <img src="/assets/icons/gmail.png" alt="Gmail">
+                        </span>
+                        <span>
+                            gerlandios51@gmail.com
+                        </span>
+                    </div>
+                      <div class="contact-item">
+                        <span>
+                            <img src="/assets/icons/localizacao.png" alt="Localização">
+                        </span>
+                        <span>
+                            Cajazeiras - Paraíba - Brasil
+                        </span>
+                    </div>
+                </div>
+                <div id="form">
+                    <form>
+                        <label for="nome">Nome</label><br><br>
+                        <input type="text" placeholder="informe o nome"
+                        required name="nome"><br><br>
+
+                        <label for="email">E-mail</label><br><br>
+                        <input type="email" placeholder="informe o email"
+                        required name="email"><br><br>
+
+                        <label for="felefone">Telefone</label><br><br>
+                        <input type="text" placeholder="informe o numero do whatsapp"
+                        required name="Telefone"><br><br>
+
+                        <label for="texto">Texto</label><br><br>
+                        <textarea name="texto" id="texto"></textarea><br><br>
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+             <p>&copy; 2025 Gerlandio Bernardo. Todos os direitos reservados.</p>
+        </footer>
     </main>
 </body>
 </html>

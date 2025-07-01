@@ -71,17 +71,16 @@ header div span {
 .button{
     text-align: left;
 }
-div button {
-    padding: 12px 25px;
-    font-size: 17px;
+.button a {
+    display: block;
+    width: 130px;
+    padding: 15px;
+    color: #e9eef5;
+    text-align: center;
     background: linear-gradient(to right, #0aaedb, #063774);
-    outline: none;
-    border: none;
-    color: white;
     border-radius: 40px;
-    cursor: pointer;
 }
-.button button:hover{
+.button a:hover{
     background: linear-gradient(to right, #1a6b81, #072e5e);
 }
 aside{
@@ -96,13 +95,13 @@ aside div a img {
     width: 20px;
     padding-top: 5px;
 }
-#sobreMin{
+#sobreMim{
     display: flex;
     justify-content: center;
     gap: 90px;
 
 }
-#imageSectionSobreMin img {
+#imageSectionSobreMim img {
     width: 300px;
     margin-top: 30px;
     border-radius: 2px;
@@ -170,7 +169,7 @@ h2{
 }
 .imageProjeto img{
     width: 300px;
-    height: 180px;
+    height: 160px;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -203,7 +202,6 @@ h3 a:hover{
     border-radius: 6px;
     box-shadow: 2px 2px 2px #99b7db;
     height: 210px;
-    margin-top: 30px;
 }
 .imageTechnologiesUsed{
     text-align: center;
@@ -219,6 +217,78 @@ h3 a:hover{
 .technologiesUsed p {
     text-align: center;
     color: #28a4bd;
+    font-size: 15px;
 }
-
+#informationContact-contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+#informationContact{
+    background-color: #2b2b2c;
+    width: 350px;
+    color: white;
+    border-radius: 10px;
+}
+#informationContact div span img{
+    width: 25px;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.contact-item span{
+    font-size: 17px;
+}
+#form label{
+    color: #0aaedb;
+}
+#form input{
+    width: 320px;
+    height: 32px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+#form ::placeholder{
+    font-size: 14px;
+}
+textarea{
+    width: 325px;
+    height: 110px;
+    border: none;
+    outline: none;
+}
+#contato{
+    margin-top: 70px;
+}
+#form button{
+    width: 330px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #0aaedb;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}
+#form button:hover{
+    background-color: #4f8d99;
+    cursor: pointer;
+}
+footer{
+    margin-top: 70px;
+    background-color:#1f2937;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f5f9;   
+}
 
