@@ -413,8 +413,50 @@ footer{
     }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+    header div span{
+        font-size: 20px;
+        padding-left: 13px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+     header nav ul {
+        gap: 20px;
+        padding-right: 30px;
+    }
+    .menu-lateral{
+        display: none;
+    }
+    #home{
+        height: auto;
+        margin-top: 60px;
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .name, #area, .description{
+        text-align: center;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .button, #linkCurriculum{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #sobreMim{
+        text-align: center;
+        padding-top: 70px;
+        gap: 0;
+    }
+    #imageSectionSobreMim img{
+        display: none;
+    }
     
 }
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
     
 }
