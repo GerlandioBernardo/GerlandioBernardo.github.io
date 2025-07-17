@@ -1,10 +1,12 @@
 :root {
     --cor-roxo: rgb(152, 97, 207);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-size: 16px;
     background: linear-gradient(to bottom, #121212, #1e1e1e);
 }
@@ -12,6 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 header nav ul {
     list-style: none;
@@ -44,7 +47,7 @@ header div span {
 #img img{
     width: 250px;
     border-radius: 50%;
-    vertical-align: 50px;
+    
 }
 .name {
     font-size: 30px;
@@ -58,7 +61,7 @@ header div span {
     color: rebeccapurple;
     font-size: 25px;
     text-align: left;
-    margin: 0;
+    padding-top: 10px;
     
 }
 .description {
@@ -67,9 +70,11 @@ header div span {
     line-height: 1.5;
     color: white;
     font-size: 15px;
+    padding-top: 10px;
 }
 .button{
     text-align: left;
+    margin-top: 20px;
 }
 .button a {
     display: block;
@@ -117,6 +122,7 @@ aside div a img {
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 .label{
     color: rgb(45, 175, 175);
@@ -158,6 +164,7 @@ h2{
     font-size: 30px;
     color: var(--cor-roxo);
     text-align: center;
+    padding-bottom: 30px;
 }
 .projeto{
     background-color: #202020;
@@ -186,8 +193,12 @@ h3 a{
 h3 a:hover{
     color: #0f71e9;
 }
+.projeto-contanier h3{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
 #tecnologias h2{
-    margin-top: 70px;
+    margin-top: 90px;
 }
 #technologiesUsed-contanier{
     display: flex;
@@ -213,11 +224,13 @@ h3 a:hover{
 .technologiesUsed h3{
     text-align: center;
     color: white;
+    padding-top: 10px;
 }
 .technologiesUsed p {
     text-align: center;
     color: #28a4bd;
     font-size: 15px;
+    padding-top: 13px;
 }
 #informationContact-contanier{
     display: flex;
@@ -239,9 +252,7 @@ h3 a:hover{
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding: 12px;
 }
 .contact-item span{
     font-size: 17px;
@@ -291,4 +302,119 @@ footer{
     align-items: center;
     color: #f1f5f9;   
 }
+#buttonVerMais{
+    background: linear-gradient(to right, #040d5e,  #0aaedb);
+    border: none;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
+    color: #e9eef5;
+}
+#buttonVerMais:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #0e1769,  #2c97b4);
+}
+#button-contanier{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+@media (max-width: 600px) {
+    header{
+        display: none;
+    }
+    .menu-lateral{
+        display: none;
 
+    }
+    #home{
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        height: auto;
+        padding-top: 20px;
+    }
+    #img img{
+        width: 200px;
+    }
+    .name{
+        text-align: center;
+        font-size: 23px;
+    }
+    .description{
+        font-size: 13px;
+        margin: 10px;
+    }
+    #area{
+        text-align: center;
+    }
+    .description{
+        max-width: 500px;
+        text-align: center;
+    }
+    .button, #linkCurriculum{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #sobreMim{
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+    }
+    #imageSectionSobreMim img{
+        display: none;
+    }
+    #location{
+        margin: 20px;
+    }
+    .label{
+        font-size: 14px;
+    }
+    .value{
+        font-size: 13px;
+    }
+    #informationContact-contanier{
+        display: block;
+    }
+    #informationContact{
+        padding: 5px;
+        margin: 0 auto;
+        width: 320px;
+    }
+    .contact-item span{
+        font-size: 15px;
+    }
+    #form {
+        text-align: center;
+        margin-top: 30px;
+    }
+    #form input, textarea{
+        width: 280px;
+    }
+    #form button {
+        width: 285px;
+    }
+    footer{
+        text-align: center;
+        font-size: 15px;
+    }
+    .hidden{
+        display: none;
+    }
+    #buttonVerMais{
+        display: block;
+    }
+    .show-all .hidden {
+        display: block;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+    
+}
