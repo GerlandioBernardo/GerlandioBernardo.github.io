@@ -1,0 +1,614 @@
+:root {
+    --cor-roxo: rgb(152, 97, 207);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background: linear-gradient(to bottom, #121212, #1e1e1e);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    background-color: #012741;
+    padding: 12px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-right: 70px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: turquoise;
+    transition: color 0.3s ease;
+    display: flex;
+    gap: 7px;
+}
+ul li a:hover{
+     color: #4f8d99;
+}
+header div span {
+    padding-left: 40px;
+    font-size: 25px;
+    color: rgb(108, 9, 206);
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    gap: 70px;
+}
+#img img{
+    width: 250px;
+    border-radius: 50%;
+    
+}
+.name {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin: 0;
+    color: #0aaedb;
+}
+#area{
+    color: rebeccapurple;
+    font-size: 25px;
+    text-align: left;
+    padding-top: 10px;
+    
+}
+.description {
+    max-width: 550px;
+    text-align: justify;
+    line-height: 1.5;
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.button{
+    text-align: left;
+    margin-top: 20px;
+}
+.button a {
+    display: block;
+    width: 130px;
+    padding: 13px;
+    color: #e9eef5;
+    text-align: center;
+    background: linear-gradient(to right, #0aaedb, #063774);
+    border-radius: 40px;
+}
+.button a:hover{
+    background: linear-gradient(to right, #1a6b81, #072e5e);
+}
+aside{
+    color: white;
+    position: absolute;
+    left: 0;
+    background-color: rgb(77, 75, 75, 0.6);
+    width: 40px;
+    border-radius: 2px;
+}
+aside div a img {
+    width: 20px;
+    padding-top: 5px;
+}
+#sobreMim{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+}
+#imageSectionSobreMim img {
+    width: 300px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+#nameSection {
+    font-size: 30px;
+    color: var(--cor-roxo);  
+}
+#location {
+    max-width: 550px;
+    border: #04244d solid 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.label{
+    color: rgb(20, 211, 211);
+    font-size: 15px;
+}
+.value{
+    color: #4f8d99;
+    font-size: 13px;
+}
+#linkCurriculum{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+#linkCurriculum a {
+    background: linear-gradient(to right, #79dcf0, #040d5e);
+    display: block;
+    width: 130px;
+    padding: 13px;
+    color: #e9eef5;
+    border-radius: 3px;
+    text-align: center;
+}
+#linkCurriculum a:hover{
+    background: linear-gradient(to right, #266dd6, #777676);
+    color: white;
+}
+#projetos{
+    margin-top: 90px;
+}
+.projeto-contanier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+}
+#carrossel{
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 700px;
+    width: 100%;
+}
+.projeto{ 
+    color: white;
+    font-size: 20px;
+    border: #040d5e 1.5px solid;
+    padding: 15px;
+    box-shadow: 1px 1px #111fa3;
+    max-width: 600px;
+    width: 100%;
+}
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btn img{
+    width: 40px;
+}
+
+.descriptionProject{
+    font-size: 13px;
+    text-align: justify;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 12px;
+}
+#technologiesProject{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.technologiesProject{
+    font-size: 12px;
+}
+.react{
+    background-color: #61DAFB;
+}
+.javascript{
+    background-color: 	#F7DF1E;
+}
+.express{
+    background-color: #404040;
+}
+.postgresql{
+    background-color: #336791;
+}
+.prisma{
+    background-color: #0C344B;
+}
+.react, .javascript, .express, .postgresql, .prisma,
+.html, .css, .typescript{
+    padding: 5px;
+    border-radius: 5px;
+}
+.html{
+    background-color: #E34F26;
+}
+.css{
+    background-color: #1572B6;
+}
+.typescript{
+    background-color: #3178C6;
+}
+.btnProjects{
+    margin-top: 20px;
+}
+.btnProjects a{
+    background: linear-gradient(to right, #5c63a5, #063774);
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #f4f6f7;
+    text-align: center;
+    display: inline-block;
+}
+.btnProjects a:hover{
+    color: white;
+    transform: translateY(-1.8px) scale(1.02);
+    box-shadow: 0 1.5px 3px rgba(218, 216, 216, 0.2);
+}
+.imageProjeto img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
+h2{
+    font-size: 30px;
+    color: var(--cor-roxo);
+    text-align: center;
+    padding-bottom: 30px;
+    text-shadow: 1px 1px white;
+}
+#tecnologias span img {
+    width: 30px;
+}
+
+strong{
+    color: slateblue;
+}
+h3 a{
+    color: #848cda;
+}
+h3 a:hover{
+    color: #0f71e9;
+}
+.projeto-contanier h3{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#tecnologias h2{
+    margin-top: 90px;
+}
+#technologiesUsed-contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.technologiesUsed{
+    background-color: #2c2c2c;
+    width: 200px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px #99b7db;
+    height: 210px;
+}
+.imageTechnologiesUsed{
+    text-align: center;
+    padding-top: 10px;
+}
+.imageTechnologiesUsed img{
+    width: 50px;
+}
+.technologiesUsed h3{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+.technologiesUsed p {
+    text-align: center;
+    color: #1574c2;
+    font-size: 15px;
+    padding-top: 13px;
+}
+#informationContact-contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+#informationContact{
+    background-color: #202030;
+    width: 350px;
+    color: #99b7db;
+    border-radius: 10px;
+    box-shadow: 1px 1px white;
+    
+}
+#informationContact div span img{
+    width: 25px;
+    vertical-align: middle;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px;
+}
+.contact-item span{
+    font-size: 17px;
+}
+#form label{
+    color: #0aaedb;
+}
+#form input{
+    width: 320px;
+    height: 32px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+#form ::placeholder{
+    font-size: 14px;
+}
+textarea{
+    width: 325px;
+    height: 110px;
+    border: none;
+    outline: none;
+}
+#contato{
+    margin-top: 70px;
+}
+#form button{
+    width: 330px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #0aaedb;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}
+#form button:hover{
+    background-color: #4f8d99;
+    cursor: pointer;
+}
+footer{
+    margin-top: 70px;
+    background-color:#1f2937;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f5f9;   
+}
+#buttonVerMais{
+    background: linear-gradient(to right, #040d5e,  #0aaedb);
+    border: none;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
+    color: #e9eef5;
+}
+#buttonVerMais:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, #0e1769,  #2c97b4);
+}
+#button-contanier{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+#btnTop {
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  background-color: #135db8;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#btnTop:hover {
+  background-color: #0b4dad;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    header{
+        display: none;
+    }
+    .menu-lateral{
+        display: none;
+
+    }
+    #home{
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        height: auto;
+        padding-top: 20px;
+    }
+    #img img{
+        width: 200px;
+    }
+    .name{
+        text-align: center;
+        font-size: 23px;
+    }
+    .description{
+        font-size: 13px;
+        margin: 10px;
+    }
+    #area{
+        text-align: center;
+    }
+    .description{
+        max-width: 500px;
+        text-align: center;
+    }
+    .button, #linkCurriculum{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #sobreMim{
+        display: block;
+        text-align: center;
+        padding-top: 60px;
+    }
+    #imageSectionSobreMim img{
+        display: none;
+    }
+    #location{
+        margin: 20px;
+    }
+    .label{
+        font-size: 14px;
+    }
+    .value{
+        font-size: 13px;
+    }
+    #carrossel{
+        width: 300px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .projeto{
+        padding: 8px;
+    }
+    .btn{
+        display: none;
+    }
+    .imageProjeto img{
+        width: 280px;
+    }
+    .projeto-contanier{
+        gap: 8px;
+    }
+    #informationContact-contanier{
+        display: block;
+    }
+    #informationContact{
+        padding: 5px;
+        margin: 0 auto;
+        width: 320px;
+    }
+    .contact-item span{
+        font-size: 15px;
+    }
+    #form {
+        text-align: center;
+        margin-top: 30px;
+    }
+    #form input, textarea{
+        width: 280px;
+    }
+    #form button {
+        width: 285px;
+    }
+    footer{
+        text-align: center;
+        font-size: 15px;
+    }
+    .hidden{
+        display: none;
+    }
+    #buttonVerMais{
+        display: block;
+    }
+    .show-all .hidden {
+        display: block;
+    }
+    #btnTop{
+        display: none !important;
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    header div span{
+        font-size: 20px;
+        padding-left: 13px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+     header nav ul {
+        gap: 20px;
+        padding-right: 30px;
+    }
+    .menu-lateral{
+        display: none;
+    }
+    #home{
+        height: auto;
+        margin-top: 60px;
+        display: block;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .name, #area, .description{
+        text-align: center;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .button, #linkCurriculum{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    #sobreMim{
+        text-align: center;
+        padding-top: 70px;
+        gap: 0;
+    }
+    #imageSectionSobreMim img{
+        display: none;
+    }
+    #btnTop{
+        display: none !important;
+    }
+    .projeto-contanier{
+        gap: 8px;
+    }
+    #carrossel{
+        width: 340px;
+    }
+    .btn img{
+        width: 35px;
+    }
+    
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #home{
+        height: 35vh;
+        padding-top: 100px;
+    }
+    #sobreMim{
+        padding-top: 35px;
+    }
+    .menu-lateral{
+        display: none;
+    }
+    #btnTop{
+        display: none !important;
+    }
+  
+}
