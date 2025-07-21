@@ -15,6 +15,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
+    background-color: #012741;
+    padding: 12px;
 }
 header nav ul {
     list-style: none;
@@ -25,8 +27,10 @@ header nav ul {
 ul li a{
     text-decoration: none;
     font-size: 18px;
-    color: skyblue;
+    color: turquoise;
     transition: color 0.3s ease;
+    display: flex;
+    gap: 7px;
 }
 ul li a:hover{
      color: #4f8d99;
@@ -34,7 +38,7 @@ ul li a:hover{
 header div span {
     padding-left: 40px;
     font-size: 25px;
-    color: var(--cor-roxo)
+    color: rgb(108, 9, 206);
 }
 #home{
     display: flex;
@@ -79,7 +83,7 @@ header div span {
 .button a {
     display: block;
     width: 130px;
-    padding: 15px;
+    padding: 13px;
     color: #e9eef5;
     text-align: center;
     background: linear-gradient(to right, #0aaedb, #063774);
@@ -103,7 +107,7 @@ aside div a img {
 #sobreMim{
     display: flex;
     justify-content: center;
-    gap: 90px;
+    gap: 80px;
 
 }
 #imageSectionSobreMim img {
@@ -113,23 +117,22 @@ aside div a img {
 }
 #nameSection {
     font-size: 30px;
-    color: var(--cor-roxo);
-    margin: 0;
+    color: var(--cor-roxo);  
 }
 #location {
     max-width: 550px;
-    border: #0f71e9 solid 1px;
+    border: #04244d solid 1px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 .label{
-    color: rgb(45, 175, 175);
+    color: rgb(20, 211, 211);
     font-size: 15px;
 }
 .value{
-    color: white;
+    color: #4f8d99;
     font-size: 13px;
 }
 #linkCurriculum{
@@ -152,33 +155,113 @@ a{
     color: white;
 }
 #projetos{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 .projeto-contanier {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+}
+#carrossel{
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 700px;
+    width: 100%;
+}
+.projeto{ 
+    color: white;
+    font-size: 20px;
+    border: #040d5e 1.5px solid;
+    padding: 15px;
+    box-shadow: 1px 1px #111fa3;
+    max-width: 600px;
+    width: 100%;
+}
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.btn img{
+    width: 40px;
+}
+
+.descriptionProject{
+    font-size: 13px;
+    text-align: justify;
+    color: white;
+    padding-bottom: 15px;
+    padding-top: 12px;
+}
+#technologiesProject{
+    display: flex;
+    gap: 10px;
     flex-wrap: wrap;
+}
+.technologiesProject{
+    font-size: 12px;
+}
+.react{
+    background-color: #61DAFB;
+}
+.javascript{
+    background-color: 	#F7DF1E;
+}
+.express{
+    background-color: #404040;
+}
+.postgresql{
+    background-color: #336791;
+}
+.prisma{
+    background-color: #0C344B;
+}
+.react, .javascript, .express, .postgresql, .prisma,
+.html, .css, .typescript{
+    padding: 5px;
+    border-radius: 5px;
+}
+.html{
+    background-color: #E34F26;
+}
+.css{
+    background-color: #1572B6;
+}
+.typescript{
+    background-color: #3178C6;
+}
+.btnProjects{
+    margin-top: 20px;
+}
+.btnProjects a{
+    background: linear-gradient(to right, #5c63a5, #063774);
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #f4f6f7;
+    text-align: center;
+    display: inline-block;
+}
+.btnProjects a:hover{
+    color: white;
+    transform: translateY(-1.8px) scale(1.02);
+    box-shadow: 0 1.5px 3px rgba(218, 216, 216, 0.2);
+}
+.imageProjeto img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
 }
 h2{
     font-size: 30px;
     color: var(--cor-roxo);
     text-align: center;
     padding-bottom: 30px;
-}
-.projeto{
-    background-color: #202020;
-    width: 310px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 1px 2px 1px #0f71e9 ;
-    padding-bottom: 10px;
-}
-.imageProjeto img{
-    width: 300px;
-    height: 160px;
-    border-radius: 10px;
-    margin-top: 10px;
+    text-shadow: 1px 1px white;
 }
 #tecnologias span img {
     width: 30px;
@@ -228,7 +311,7 @@ h3 a:hover{
 }
 .technologiesUsed p {
     text-align: center;
-    color: #28a4bd;
+    color: #1574c2;
     font-size: 15px;
     padding-top: 13px;
 }
@@ -240,19 +323,22 @@ h3 a:hover{
     margin-top: 30px;
 }
 #informationContact{
-    background-color: #2b2b2c;
+    background-color: #202030;
     width: 350px;
-    color: white;
+    color: #99b7db;
     border-radius: 10px;
+    box-shadow: 1px 1px white;
+    
 }
 #informationContact div span img{
     width: 25px;
+    vertical-align: middle;
 }
 .contact-item{
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 12px;
+    padding: 14px;
 }
 .contact-item span{
     font-size: 17px;
@@ -321,7 +407,26 @@ footer{
     justify-content: center;
     padding-top: 30px;
 }
-@media (max-width: 600px) {
+#btnTop {
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  background-color: #135db8;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#btnTop:hover {
+  background-color: #0b4dad;
+  transform: translateY(-2px);
+}
+@media (max-width: 768px) {
     header{
         display: none;
     }
@@ -377,6 +482,24 @@ footer{
     .value{
         font-size: 13px;
     }
+    #carrossel{
+        width: 300px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .projeto{
+        padding: 8px;
+    }
+    .btn{
+        display: none;
+    }
+    .imageProjeto img{
+        width: 280px;
+    }
+    .projeto-contanier{
+        gap: 8px;
+    }
     #informationContact-contanier{
         display: block;
     }
@@ -411,8 +534,12 @@ footer{
     .show-all .hidden {
         display: block;
     }
+    #btnTop{
+        display: none !important;
+    }
+    
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     header div span{
         font-size: 20px;
         padding-left: 13px;
@@ -455,8 +582,33 @@ footer{
     #imageSectionSobreMim img{
         display: none;
     }
+    #btnTop{
+        display: none !important;
+    }
+    .projeto-contanier{
+        gap: 8px;
+    }
+    #carrossel{
+        width: 340px;
+    }
+    .btn img{
+        width: 35px;
+    }
     
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
-    
+    #home{
+        height: 35vh;
+        padding-top: 100px;
+    }
+    #sobreMim{
+        padding-top: 35px;
+    }
+    .menu-lateral{
+        display: none;
+    }
+    #btnTop{
+        display: none !important;
+    }
+  
 }
